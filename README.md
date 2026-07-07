@@ -1,13 +1,28 @@
 # Public Assets Repository
 
-Stores public PDF files for the Panama City Youth Orchestra website. Files are uploaded through GitHub Releases for stable, permanent download links.
+Supports the Panama City Youth Orchestra website in two ways:
+
+- Hosts public PDF files, uploaded through GitHub Releases for stable, permanent download links.
+- Hosts `site-config.json`, a small file the website reads at runtime so certain content (tuition, performance dates, audition visibility, etc.) can be updated without redeploying the website itself.
 
 ## Editing Site Content Without Redeploying
-`site-config.json` mirrors the `SITE_CONFIG` object in `components.js` (tuition, upcoming performance details, contact info, etc.). The website fetches this file at runtime and merges it over the local defaults, so editing values here updates the live site without redeploying to Netlify. Values are cached in the visitor's browser for 1 hour.
 
-The Join page in the website contains download links for the audition materials. Toggling the `revealAuditions` flag in `site-config.json` between true and false will toggle visibility of the links without needing to deploy a new version of the website to Netlify.
+`site-config.json` (in the root of this repo) mirrors part of the `SITE_CONFIG` object in the website's `components.js`. The website fetches this file at runtime, served through GitHub Pages, and overlays it on top of its local defaults — so editing a value here updates the live site without a Netlify redeploy. Values are cached in each visitor's browser for 20 minutes, so changes may take up to 20 minutes to appear for someone who already has the site open.
 
-Security note: Users can still discover the links by digging into the inspector. As such, it may be a good idea to **not** update the release with the correct audition files until we are ready to set the `revealAuditions` flag to `true`.
+To make a change: edit `site-config.json` directly on GitHub (or clone/push), commit to `main`, and wait for GitHub Pages to redeploy (usually under a minute).
+
+| Field | Purpose |
+| --- | --- |
+| `contactEmail` | Email address used for `mailto:` links site-wide |
+| `donationFormUrl` | Link target for donation buttons |
+| `feedbackFormUrl` | Link target for feedback form |
+| `mailingAddress` | Physical mailing address shown in the footer/contact page |
+| `tuitionIndividual` | Tuition cost (USD/year) for a single student |
+| `tuitionFamily` | Tuition cost (USD/year) for two+ students from the same family |
+| `upcomingPerformance` | Object with the next performance's season, tagline, date, times, venue, admission info, and program highlights |
+| `revealAuditions` | `true`/`false` — shows or hides the audition PDF download links on the Join page (see below) |
+
+Security note: even when `revealAuditions` is `false`, a determined user could still find the PDF links by digging into the browser inspector. As such, it's a good idea to **not** upload the actual audition files to the release until you're ready to set `revealAuditions` to `true`.
 
 ## Uploading Audition PDFs
 
@@ -25,6 +40,6 @@ Security note: Users can still discover the links by digging into the inspector.
 ## Notes
 
 - If wanting to add or remove supported instrument types for auditions, such as guitar, flute, piano, etc., the website will need to be updated to reflect this change. It currently only supports 3 instruments.
-- No Git or code required. Everything is done through the web interface.
+- Both uploading PDFs and editing `site-config.json` can be done entirely through GitHub's web interface — no Git or code required.
 
 If something doesn't look right, contact the site administrator.
