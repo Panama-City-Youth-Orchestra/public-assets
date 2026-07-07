@@ -2,8 +2,10 @@
 
 Stores public PDF files for the Panama City Youth Orchestra website. Files are uploaded through GitHub Releases for stable, permanent download links.
 
-## Toggling Audition Links in Website
-The Join page in the website contains download links for the audition materials. Toggling the `revealAuditions` flag in `audition.json` between true and false will toggle visibility of the links without happening to deploy a new version of the website to Netlify.
+## Editing Site Content Without Redeploying
+`site-config.json` mirrors the `SITE_CONFIG` object in `components.js` (tuition, upcoming performance details, contact info, etc.). The website fetches this file at runtime and merges it over the local defaults, so editing values here updates the live site without redeploying to Netlify. Values are cached in the visitor's browser for 1 hour.
+
+The Join page in the website contains download links for the audition materials. Toggling the `revealAuditions` flag in `site-config.json` between true and false will toggle visibility of the links without needing to deploy a new version of the website to Netlify.
 
 Security note: Users can still discover the links by digging into the inspector. As such, it may be a good idea to **not** update the release with the correct audition files until we are ready to set the `revealAuditions` flag to `true`.
 
