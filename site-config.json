@@ -1,10 +1,15 @@
 {
-  "contactEmail": "pcyouthorchestra@yahoo.com",
+  "contactEmail": "panamacityyouthorchestra@gmail.com",
   "donationFormUrl": "https://www.zeffy.com/en-US/donation-form/panama-city-youth-orchestra",
   "feedbackFormUrl": "https://form.jotform.com/80107536679160",
   "mailingAddress": "803 Harrison Ave, Panama City, FL 32401",
   "tuitionIndividual": 50,
   "tuitionFamily": 100,
+
+  "rehearsal": {
+    "day": "Thursday",
+    "time": "4:00 PM"
+  },
 
   "upcomingPerformance": {
     "season": "Spring 2026",
