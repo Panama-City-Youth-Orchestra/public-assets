@@ -4,8 +4,8 @@
   "donationFormUrl": "https://www.zeffy.com/en-US/donation-form/panama-city-youth-orchestra",
   "feedbackFormUrl": "https://form.jotform.com/80107536679160",
   "mailingAddress": "803 Harrison Ave, Panama City, FL 32401",
-  "tuitionIndividual": 50,
-  "tuitionFamily": 100,
+  "tuitionIndividual": 125,
+  "tuitionExtraStudent": 75,
 
   "rehearsal": {
     "day": "Thursday",
