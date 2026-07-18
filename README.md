@@ -24,7 +24,8 @@ To make a change: edit `site-config.json` directly on GitHub (or clone/push), co
 
 Security note: even when `revealAuditions` is `false`, a determined user could still find the PDF links by digging into the browser inspector. As such, it's a good idea to **not** upload the actual audition files to the release until you're ready to set `revealAuditions` to `true`.
 
-## Uploading Audition PDFs
+## Uploading Audition PDFs (Legacy)
+*No longer used for providing assessment files. Links are now stored in `site-config.json`.*
 
 1. Go to the [Releases page](https://github.com/Panama-City-Youth-Orchestra/public-assets/releases).
 2. If a release already exists with a tag of "v1", skip to step 5. Otherwise, click **Create a new release**.
