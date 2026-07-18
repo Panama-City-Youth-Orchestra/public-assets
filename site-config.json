@@ -1,31 +1,31 @@
 {
   "contactEmail": "panamacityyouthorchestra@gmail.com",
   "contactPhone": "(850) 851-8778",
-  "donationFormUrl": "https://www.zeffy.com/en-US/donation-form/panama-city-youth-orchestra",
-  "feedbackFormUrl": "https://form.jotform.com/80107536679160",
   "mailingAddress": "803 Harrison Ave, Panama City, FL 32401",
   "tuitionIndividual": 125,
   "tuitionExtraStudent": 75,
 
   "rehearsal": {
     "day": "Thursday",
-    "time": "4:00 PM"
+    "time": "4:00-5:15 PM"
   },
 
   "upcomingPerformance": {
-    "season": "Spring 2026",
-    "tagline": "Spring Is in the Air",
-    "date": "Tuesday, May 5th, 2026",
+    "season": "Fall 2026",
+    "tagline": "Christmas Is Here",
+    "date": "Thursday, November 19th, 2026",
     "timeStart": "7:00 PM",
     "timeEnd": "8:00 PM",
     "venue": "Gulf Coast State College — Main Auditorium",
     "free": true,
-    "highlights": [
-      "John Williams — Star Wars Main Theme",
-      "Classical favorites",
-      "David Arnold — The Chronicles of Narnia"
-    ]
+    "highlights": []
   },
 
-  "revealAuditions": true
+  "revealAuditions": true,
+  "assessmentLinks": {
+    "violin": "https://imslp.org/",
+    "viola": "https://panamacityyouthorchestra.com/",
+    "cello": "https://facebook.com/",
+    "doublebass": "https://panamacityyouthorchestra.netlify.app/"
+  }
 }
