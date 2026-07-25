@@ -16,16 +16,11 @@
     "date": "Thursday, November 19th, 2026",
     "timeStart": "7:00 PM",
     "timeEnd": "8:00 PM",
-    "venue": "Gulf Coast State College — Main Auditorium",
+    "venue": "Gulf Coast State College — Amelia Tapper Center: Main Auditorium",
     "free": true,
     "highlights": []
   },
 
   "revealAuditions": true,
-  "assessmentLinks": {
-    "violin": "https://docs.google.com/document/d/13ZWV3UCb90LuaKQwYxedzgVOWexFdd1hwOTg6gnJQEk/",
-    "viola": "https://docs.google.com/document/d/13ZWV3UCb90LuaKQwYxedzgVOWexFdd1hwOTg6gnJQEk/",
-    "cello": "https://docs.google.com/document/d/13ZWV3UCb90LuaKQwYxedzgVOWexFdd1hwOTg6gnJQEk/",
-    "doublebass": "https://docs.google.com/document/d/13ZWV3UCb90LuaKQwYxedzgVOWexFdd1hwOTg6gnJQEk/"
-  }
+  "assessmentLink": "https://docs.google.com/document/d/13ZWV3UCb90LuaKQwYxedzgVOWexFdd1hwOTg6gnJQEk/"
 }
