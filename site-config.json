@@ -4,6 +4,7 @@
   "mailingAddress": "803 Harrison Ave, Panama City, FL 32401",
   "tuitionIndividual": 125,
   "tuitionExtraStudent": 75,
+  "familyRegistrationFee": 25,
 
   "rehearsal": {
     "day": "Thursday",
