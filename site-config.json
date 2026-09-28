@@ -21,7 +21,9 @@
     "free": true,
     "highlights": "Join us for an evening filled with live music and the timeless spirit of the season. Enjoy favorites from Handel's Messiah, Polar Express, Elf, and more!"
   },
-
+  
+  "performanceRequestFormUrl": "https://docs.google.com/forms/d/e/1FAIpQLScgyk1zZR7pzx93y0Qn6s4k7Pt2NwM0CE8uhT2fv8udBOYKcA/viewform?usp=publish-editor",
+  
   "revealAuditions": false,
   "assessmentLink": ""
 }
